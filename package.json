@@ -1,0 +1,12 @@
+{
+  "name": "app",
+  "private": "true",
+  "dependencies": {
+    "bootstrap": "^5.3.7",
+    "sass": "1.49.11"
+  },
+  "scripts": {
+    "build": "yarn build:css",
+      "build:css": "sass --load-path=node_modules --load-path=app/assets/stylesheets --load-path=$(bundle show bootstrap)/assets/stylesheets app/assets/stylesheets/application.scss app/assets/builds/application.css"
+  }
+}

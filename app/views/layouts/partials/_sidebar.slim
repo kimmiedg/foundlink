@@ -1,0 +1,66 @@
+.leftside-menu
+  a.logo.logo-light href="#{root_path}"
+    span.logo-lg
+      = image_tag "logo-dark.png", alt: "dark logo", class: "logo-img"
+    span.logo-sm
+      = image_tag "logo.png", alt: "small logo"
+  
+  a.logo.logo-dark href="#{root_path}"
+    span.logo-lg
+      = image_tag "logo-dark.png", alt: "dark logo", class: "logo-img"
+    span.logo-sm
+      = image_tag "logo.png", alt: "small logo"
+  
+  / .button-sm-hover data-bs-toggle="tooltip" data-bs-placement="right" title="Show Full Sidebar"
+  /   i.ri-checkbox-blank-circle-line.align-middle
+  / Full Sidebar Menu Close Button
+  .button-close-fullsidebar
+    i.ri-close-fill.align-middle
+  / Sidebar -left
+  #leftside-menu-container.h-100 data-simplebar=""
+    / Leftbar User
+    .leftbar-user
+      a[href="pages-profile.html"]
+        img.rounded-circle.shadow-sm[src="assets/images/users/avatar-1.jpg" alt="user-image" height="42"]
+        span.leftbar-user-name.mt-2
+          | Tosha Minner
+    / - Sidemenu
+    ul.side-nav
+      li.side-nav-title
+        | Getting Started
+      li.side-nav-item
+        a.side-nav-link[href="index.html"]
+          i.ri-honour-line
+          span
+            |  Introduction 
+      li.side-nav-item
+        a.side-nav-link[href="installation.html"]
+          i.ri-tools-fill
+          span
+            |  Installation 
+      li.side-nav-title
+        | Customization
+      li.side-nav-item
+        a.side-nav-link[href="customization.html"]
+          i.ri-paint-line
+          span
+            |  Customization 
+      li.side-nav-title
+        | Other
+      li.side-nav-item
+        a.side-nav-link[href="changelog.html"]
+          i.ri-book-open-line
+          span
+            |  Changelog 
+    / - End Sidemenu
+    .help-box.text-white.text-center.d-none
+      a.float-end.close-btn.text-white[href="javascript: void(0);"]
+        i.mdi.mdi-close
+      img[src="assets/images/svg/help-icon.svg" height="90" alt="Helper Icon Image"]
+      h5.mt-3
+        | Unlimited Access
+      p.mb-3
+        | Upgrade to plan to get access to unlimited reports
+      a.btn.btn-secondary.btn-sm[href="javascript: void(0);"]
+        | Buy Now
+    .clearfix
