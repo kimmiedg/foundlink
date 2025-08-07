@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   root to: "v1/pages#index"
   namespace :v1 do
-    resources :pages, only: [:index]
+    resources :pages, only: [ :index ]
   end
 end

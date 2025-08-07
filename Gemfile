@@ -19,7 +19,7 @@ gem "kamal", require: false
 gem "thruster", require: false
 gem "jquery-rails"
 gem "jsbundling-rails"
-gem 'bootstrap', '~> 5.3.3'
+gem "bootstrap", "~> 5.3.3"
 gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
