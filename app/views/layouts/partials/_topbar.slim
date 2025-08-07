@@ -1,0 +1,17 @@
+.navbar-custom
+  .topbar.container-fluid
+    .d-flex.align-items-center.gap-lg-2.gap-1
+      .logo-topbar
+        a.logo.logo-light href="#{root_path}"
+          span.logo-lg
+            = image_tag "logo-dark.png", alt: "dark logo", class: "logo-img"
+          span.logo-sm
+            = image_tag "logo.png", alt: "small logo"
+        
+        a.logo.logo-dark href="#{root_path}"
+          span.logo-lg
+            = image_tag "logo-dark.png", alt: "dark logo", class: "logo-img"
+          span.logo-sm
+            = image_tag "logo.png", alt: "small logo"
+      button.button-toggle-menu
+        i.ri-menu-2-fill

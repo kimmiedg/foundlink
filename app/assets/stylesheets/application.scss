@@ -8,3 +8,9 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+ 
+@use "app.min";
+@use "icons.min";
+@use "simplebar.min";
+@use "custom";
+@use "bootstrap" as *;
